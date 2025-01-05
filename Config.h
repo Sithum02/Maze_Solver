@@ -21,7 +21,7 @@
 // Constants
 const float WHEEL_DIAMETER = 33.6; // mm
 const float WHEEL_CIRCUMFERENCE = WHEEL_DIAMETER * 3.14159; // mm
-const int PULSES_PER_ROTATION = 105;
+const int PULSES_PER_ROTATION = 104;
 const float DISTANCE_PER_PULSE = WHEEL_CIRCUMFERENCE / PULSES_PER_ROTATION; // mm per pulse
 const float WHEEL_BASE = 84.0; // mm
 const float ROTATION_DISTANCE = 3.14159 * WHEEL_BASE / 2.0; // mm for 90-degree turn
