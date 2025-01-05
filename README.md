@@ -7,7 +7,7 @@ This project implements a maze-solving robot using an **ESP32 board**, equipped 
 ## **Features**
 
 - **Hardware Components**:
-  - ESP32 microcontroller
+  - Arduino UNO microcontroller
   - VL53L0X ToF distance sensors
   - TB6612 motor driver
   - N20 encoder motors
