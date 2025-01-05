@@ -1,0 +1,26 @@
+#ifndef ENCODERS_H
+#define ENCODERS_H
+
+#include <Arduino.h>
+#include "Config.h"
+
+volatile int encoder1Count = 0;
+volatile int encoder2Count = 0;
+
+void encoder1ISR_A() {
+    if (digitalRead(ENCODER1_A) == digitalRead(ENCODER1_B)) {
+        encoder1Count++;
+    } else {
+        encoder1Count--;
+    }
+}
+
+void encoder2ISR_A() {
+    if (digitalRead(ENCODER2_A) == digitalRead(ENCODER2_B)) {
+        encoder2Count++;
+    } else {
+        encoder2Count--;
+    }
+}
+
+#endif
